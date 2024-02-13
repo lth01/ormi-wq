@@ -19,6 +19,8 @@ public class PersonalContact extends Contact{
 
     @Override
     public String showContact() {
-        return null;
+        String formattedContact = String.format("이름: %s, 전화번호: %s, 회사명: %s\n",this.getName(), this.getPhoneNumber(), this.getRelationship());
+
+        return formattedContact;
     }
 }
